@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'sub-titulos';
+    src: url('../font/Hey\ Comic.ttf');
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url('../font/Grand_Aventure_Text.otf');
+}
+
+@font-face {
+    font-family: 'principal';
+    src: url('../font/Cakecafe.ttf');
+}
+
+
+body {
+    background-color: #f5d856;
+    width: 100%;
+    height: auto;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    height: auto;
+    background-color: #d1b537b7;
+}
+
+header .titulo {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .titulo img {
+    width: 80px;
+}
+
+header .titulo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .titulo div h1 {
+    font-family: 'titulos';
+    font-size: 48px;
+}
+
+header .titulo div strong {
+    font-size: 22px;
+    font-family: 'sub-titulos';
+}
+
+
+header .bienvenidos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .bienvenidos h2 {
+    font-family: 'principal';
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+
+header .gracias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .gracias h2 {
+    font-family: 'principal';
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+/*NAVBAR */
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.nav2 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+}
+
+.nav2 nav .btn {
+    margin-left: 6px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bolder;
+    transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+    /* Activa el efecto del hover */
+    width: 100%;
+}
+
+.btn1 {
+    border: 1px solid #0fbcf9;
+    color: #0fbcf9;
+}
+
+.btn1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    background-color: #0fbcf9;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.btn2 {
+    border: 1px solid #fc5c65;
+    color: #fc5c65;
+}
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    background-color: #fc5c65;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.btn3 {
+    border: 1px solid #4cd137;
+    color: #4cd137;
+}
+
+.btn3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    background-color: #4cd137;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.btn4 {
+    border: 1px solid #e432bd;
+    color: #e432bd;
+}
+
+.btn4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    background-color: #e432bd;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.btn5 {
+    border: 1px solid #dba309;
+    color: #dba309;
+}
+
+.btn5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    background-color: #dba309;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: rgba(236, 236, 236, 0.726);
+    height: 300px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.container .cards {
+    display: flex;
+    gap: 20px;
+}
+.container .cards .card {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px dotted #333;
+    border-style: dotted;
+}
+.container .cards .card img {
+    width: 100%;
+    height: 100%;
+}
+.container div {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.empresa { 
+    display: flex;
+      background-color: #f7f7f7;
+      gap: 25px;
+      justify-content:space-around;
+      align-items: center;
+      text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+
+}
+.sigla {
+  background-color: #ffcc70;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.descripcion {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.empresa .fotos img {
+    width: 280px;
+}
+
+
+
+.container2 {
+    display: flex;
+    width: 100%;
+    background-color: rgba(216, 211, 162, 0.637);
+    height: 250px;
+}
