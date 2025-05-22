@@ -378,12 +378,24 @@ nav {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
+}
+
+.footer .holana {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .holana img {
+    padding: 20px;
+    width: 320px;
 }
 
 .footer .links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer .links img {
@@ -424,6 +436,7 @@ nav {
     padding-top: 10px;
     margin-bottom: 10px;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .footer .redes .titulo-cont {
@@ -452,14 +465,4 @@ nav {
 
 .footer .redes .red a:hover {
     color: red;
-}
-
-.footer .holana {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer .holana img {
-    padding: 20px;
-    width: 320px;
 }
