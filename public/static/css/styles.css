@@ -315,6 +315,7 @@ nav {
   height: 100px;
   width: 100px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  filter: drop-shadow(4px 4px 20px rgb(70, 40, 12))
 }
 .descripcion {
   display: flex;
@@ -358,12 +359,59 @@ nav {
 }
 .container2 .pagos .medios-pago img {
     width: 200px;
+    filter: drop-shadow(4px 4px 20px rgb(4, 43, 151))
 }
 
 /* -------------------- FOOTER ----------------------*/
 .footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 250px;
+}
+.footer .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .links img{
+    width: 180px;
+    padding: 15px;
+    filter: drop-shadow(4px 4px 20px rgb(27, 27, 27))
+}
+.footer .links p{
+    font-size: 45px;
+    font-family: 'titulos';
+}
+.footer .redes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+.footer .redes .titulo-cont{
+    font-size: 25px;
+    font-family: 'sub-titulos';
+}
+.footer .redes strong{
+    font-size: 25px;
+}
+.footer .redes .red{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 20px;
+}
+.footer .redes .red img{
+    width: 45px;
+}
+.footer .redes .red  a{
+    color: #000000;
+}
+.footer .redes .red  a:hover{
+    color:red;
+}
+.footer .holana img{
+    width: 450px;
 }
