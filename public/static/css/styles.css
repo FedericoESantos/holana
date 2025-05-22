@@ -44,6 +44,7 @@ header .titulo {
 
 header .titulo img {
     width: 80px;
+    filter: drop-shadow(4px 4px 20px rgb(27, 27, 27))
 }
 
 header .titulo div {
@@ -403,6 +404,7 @@ nav {
 .footer .links p {
     font-size: 28px;
     font-family: 'titulos';
+    padding-bottom: 23px;
 }
 
 .footer .links .rutas {
