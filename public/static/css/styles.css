@@ -249,6 +249,7 @@ nav {
 }
 .container div {
     display: flex;
+    width: 100%;
     gap: 20px;
     padding-top: 10px;
 }
