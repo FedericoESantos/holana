@@ -21,7 +21,7 @@
 
 
 body {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     width: 100%;
     height: auto;
 }
@@ -206,7 +206,7 @@ nav {
 .btn:hover::before {
     transform: translateX(0);
     width: 100%;
-}    
+}
 
 /* ----------------- CARRUSEL -------------------*/
 .slider {
@@ -216,23 +216,28 @@ nav {
     overflow: hidden;
 
 }
+
 .slider .slide-track {
     display: flex;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(200px * 16);
 }
-.slider .slide{
+
+.slider .slide {
     width: 200px;
 }
-.slider .slide img{
+
+.slider .slide img {
     width: 100%;
 }
-@keyframes scroll{
+
+@keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(calc(-200px * 8));
         transform: translateX(calc(-200px * 8));
@@ -248,11 +253,13 @@ nav {
     padding: 20px;
 
 }
+
 .container .cards {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .container .cards .card {
     width: 220px;
     height: 220px;
@@ -262,10 +269,12 @@ nav {
     border: 3px dotted #333;
     border-style: dotted;
 }
+
 .container .cards .card img {
     width: 100%;
     height: 100%;
 }
+
 .container div {
     display: flex;
     justify-content: center;
@@ -274,42 +283,46 @@ nav {
     padding-top: 10px;
 }
 
-.empresa { 
+.empresa {
     display: flex;
-      background-color: #f7f7f7;
-      gap: 25px;
-      justify-content:space-around;
-      align-items: center;
-      text-align: center;
+    background-color: #f7f7f7;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
+
 .grid-container {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 20px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
 
 }
+
 .sigla {
-  background-color: #ffcc70;
-  padding: 20px;
-  border-radius: 50%;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  width: 100px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  filter: drop-shadow(4px 4px 20px rgb(70, 40, 12))
+    background-color: #ffcc70;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(4px 4px 20px rgb(70, 40, 12))
 }
+
 .descripcion {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
+
 .empresa .fotos img {
     width: 280px;
 }
@@ -325,14 +338,17 @@ nav {
     align-items: center;
     padding-top: 25px;
 }
+
 .container2 h2 {
     font-size: 35px;
     font-family: 'sub-titulos';
 }
-.container2 span{
+
+.container2 span {
     padding: 10px;
     font-size: 25px;
 }
+
 .container2 .pagos {
     display: flex;
     width: 100%;
@@ -341,88 +357,109 @@ nav {
     text-align: center;
     flex-wrap: wrap;
 }
-.container2 .pagos .medios-pago h3{
+
+.container2 .pagos .medios-pago h3 {
     font-size: 25px;
     padding-bottom: 15px;
 }
+
 .container2 .pagos .medios-pago img {
     width: 120px;
     filter: drop-shadow(4px 4px 20px rgb(4, 43, 151))
 }
 
 /* -------------------- FOOTER ----------------------*/
-.footer{
+.footer {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
     width: 100%;
-    height: 250px;
+    box-sizing: border-box;
 }
-.footer .links{
+
+.footer .links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footer .links img{
+
+.footer .links img {
     width: 150px;
-    padding: 15px;
     filter: drop-shadow(4px 4px 20px rgb(27, 27, 27))
 }
-.footer .links p{
+
+.footer .links p {
     font-size: 28px;
     font-family: 'titulos';
 }
-.footer .links .rutas{
+
+.footer .links .rutas {
     display: flex;
     gap: 20px;
 }
-.footer .links .rutas a{
+
+.footer .links .rutas a {
     text-decoration: none;
     font-size: 22px;
 
     color: #000000;
 }
-.footer .links .rutas a:hover{
+
+.footer .links .rutas a:hover {
     color: #ff0000;
     text-shadow: 2ps 2ps 4px black;
 }
-.footer .links .registro{
+
+.footer .links .registro {
     padding-top: 10px;
     font-size: 18px;
 }
-.footer .redes{
+
+.footer .redes {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     margin-bottom: 10px;
     gap: 30px;
 }
-.footer .redes .titulo-cont{
+
+.footer .redes .titulo-cont {
     font-size: 25px;
     font-family: 'sub-titulos';
 }
-.footer .redes strong{
+
+.footer .redes strong {
     font-size: 22px;
 }
-.footer .redes .red{
+
+.footer .redes .red {
     display: flex;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
     gap: 20px;
 }
-.footer .redes .red img{
+
+.footer .redes .red img {
     width: 45px;
 }
-.footer .redes .red  a{
+
+.footer .redes .red a {
     color: #000000;
 }
-.footer .redes .red  a:hover{
-    color:red;
+
+.footer .redes .red a:hover {
+    color: red;
 }
-.footer .holana{
+
+.footer .holana {
     display: flex;
     flex-wrap: wrap;
 }
-.footer .holana img{
+
+.footer .holana img {
     padding: 20px;
     width: 320px;
 }
