@@ -35,18 +35,18 @@
   <div class="contenedor">
     <h2>Haga su Pedido o Consulta Aquí:</h2>
    
-    <form action="" method="get">
+    <form action="/send-email" method="post">
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="nombre">
+      <input type="text" name="nombre" id="nombre" required placeholder="Escriba aquí su nombre">
 
       <label for="apellido">Apellido</label>
-      <input type="text" name="Apellido" id="apellido">
+      <input type="text" name="Apellido" id="apellido" required placeholder="Escriba aquí su apellido">
 
       <label for="email">Email</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" required placeholder="Escriba aquí su email">
 
       <label for="text">Consulta</label>
-      <textarea name="consulta" id="consulta" style="resize: none;">
+      <textarea name="consulta" id="consulta" style="resize: none;" required>
 
       </textarea>
       <button type="submit">Enviar</button>
