@@ -517,9 +517,66 @@ a {
 -------------------------------------------------------------------------*/
 .contenedor {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
-    height: 950px;
-    background-color: #e9e8e3a6;
+    align-items: center;
+    height: auto;
+    background-color: #dddbce77;
+    margin-top: 157px;
+    padding-bottom: 35px;
+}
+.contenedor h2{
+    padding-top: 40px;
+    font-family: 'titulos';
+    font-size: 45px;
+}
+
+.contenedor form{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor form label{
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.contenedor form input{
+    width: 60%;
+    height: 25px;
+}
+.contenedor form textarea{
+    width: 350px;
+    height: 200px;
+}
+.contenedor form button{
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 10px;
+}
+.contenedor form button:hover{
+    background-color: #beb899;
+    color: red;
+}
+
+.contenedor .aclaracion-pedidos{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+}
+
+.contenedor .aclaracion-pedidos span{
+    text-align: center;
+    font-size: 22px;
 }
