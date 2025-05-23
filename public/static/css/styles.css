@@ -446,9 +446,20 @@ p {
     text-shadow: 2ps 2ps 4px black;
 }
 
-.footer .links .registro {
-    padding-top: 10px;
+.footer .links div {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer .links div p,
+a {
     font-size: 18px;
+}
+
+.footer .links div a{
+    text-decoration: none;
+    justify-items: center;
 }
 
 .footer .redes {
