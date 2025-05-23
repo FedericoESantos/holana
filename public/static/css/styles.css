@@ -24,6 +24,12 @@ body {
     background-color: whitesmoke;
     width: 100%;
     height: auto;
+    background-image: url('../img/ojo-transp.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    opacity: 1;
 }
 
 /* ----------------- HEADER ----------------------------*/
@@ -294,7 +300,7 @@ nav {
 
 .empresa {
     display: flex;
-    background-color: #f7f7f7;
+    background-color: #f7f7f793;
     gap: 25px;
     justify-content: space-around;
     align-items: center;
