@@ -222,8 +222,7 @@ nav {
 .slider {
     width: 75vw;
     height: auto;
-    margin-top: 160px;
-
+    margin: 160px auto 0 auto;
     overflow: hidden;
 }
 
@@ -377,7 +376,8 @@ nav {
     filter: drop-shadow(4px 4px 20px rgb(4, 43, 151))
 }
 
-.container2 .pagos .medios-pago strong, p{
+.container2 .pagos .medios-pago strong,
+p {
     font-size: 22px;
     padding-bottom: 15px;
 }
@@ -482,15 +482,15 @@ nav {
     color: red;
 }
 
-@media (max-width: 1193px){
+@media (max-width: 1193px) {
     .footer {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  .footer .redes{
-    flex-direction: column;
-    align-items: center;
-  }
-} 
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
+    .footer .redes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
